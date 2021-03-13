@@ -1,0 +1,13 @@
+@(message: String)
+
+@main("Play with Scala.js") {
+<h2>Highchart</h2>
+<ul>
+  <li>Play shouts out: <em>@message</em></li>
+  <li>Scala.js shouts out: <em id="scalajsShoutOut"></em></li>
+</ul>
+<script>jQuery.getScript('https://code.highcharts.com/highcharts.js', function() {
+jQuery.getScript('https://code.highcharts.com/modules/exporting.js', function() {
+})})</script>
+<div id="container" style="width:100%; height:400px;"></div>
+}
