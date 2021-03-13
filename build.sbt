@@ -26,9 +26,6 @@ lazy val client = (project in file("client"))
     libraryDependencies ++= Seq(
       "com.github.karasiq" %%% "scalajs-highcharts" % "1.2.1",
       "be.doeraene" %%% "scalajs-jquery" % "0.9.1"
-    ),
-    jsDependencies ++= Seq(
-      "org.webjars" % "highcharts" % "8.2.2" / "8.2.2/highcharts.src.js" minified "8.2.2/highcharts.js" dependsOn "jquery.js"
     )
   )
   .enablePlugins(ScalaJSPlugin, ScalaJSWeb)
